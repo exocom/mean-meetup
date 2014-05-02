@@ -1,0 +1,12 @@
+<div class="container">
+<div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <input type="file" ng-file-select="onFileSelect($files)" >
+    </div>
+</div>
+    <div ng-if="image">
+        <h2 >Here is your image</h2>
+        <img ng-src="{{image.path + image.name}}">
+        <pre>{{image.path + image.name}}</pre>
+    </div>
+</div>
